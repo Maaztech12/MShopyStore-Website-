@@ -18,7 +18,7 @@ def home(request):
         allProds.append([prod, range(1, nSlides), nSlides])
 
     params = {'allProds': allProds}
-    return render(request,'index.html',params)
+    return render(request,'base.html',params)
 
 def about(request):
     return render(request,'about.html')
